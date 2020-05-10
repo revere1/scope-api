@@ -1,0 +1,27 @@
+{
+  "name": "node-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "dev": "eval $(cat .env) pm2 start ./bin/www",
+    "mysqlExport": "mysql -u root -p -n < scopeDump.sql "
+  },
+  "dependencies": {
+    "aws-sdk": "2.493.0",
+    "config": "^3.2.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "nexmo": "^2.6.0",
+    "pm2": "^4.2.1",
+    "sendotp": "^1.2.9",
+    "textmagic-rest-client": "^1.0.10",
+    "unirest": "^0.6.0"
+  }
+}
