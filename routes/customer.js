@@ -43,10 +43,10 @@ router.get("/login/:mobileNo", async (req, res) => {
       })
         if (error)
           return res.json({ status: 500, Message: "Unable to Connect Server" });
-        sendotp.sms(
-          `${OTP} is your Scope Bike login OTP. OTP is confidential.\n- SCOPE Team.`,
-          req.params.mobileNo
-        );
+        // sendotp.sms(
+        //   `${OTP} is your Scope Bike login OTP. OTP is confidential.\n- SCOPE Team.`,
+        //   req.params.mobileNo
+        // );
 
         if (result.length > 0) {
           db.query(
